@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ANTLRGenerationPreferences">
+    <option name="perGrammarGenerationSettings">
+      <list>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/src/main/java/com/fanduel/abstractr/Java9Lexer.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="$PROJECT_DIR$/src/main/java/com/fanduel/abstractr" />
+          <option name="libDir" value="$PROJECT_DIR$/src/main/java/com/fanduel/abstractr" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="antlr" />
+          <option name="language" value="Java" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/src/main/java/com/fanduel/abstractr/Java9Parser.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="$PROJECT_DIR$/target/generated-sources" />
+          <option name="libDir" value="$PROJECT_DIR$/src/main/java/com/fanduel/abstractr" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="antlr" />
+          <option name="language" value="Java" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
+      </list>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/antlr/java9/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
