@@ -14,7 +14,7 @@
 <!-- Primary-blue-light: #2193ff -->
 <!-- Primary-green: #29ad55 -->
 
-<VBox prefWidth="653.0" style="-fx-background-color: #ffffff" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fanduel.abstractr.HelloController">
+<VBox prefWidth="653.0" style="-fx-background-color: #ffffff" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fanduel.abstractr.MainController">
     <BorderPane>
         <top>
             <BorderPane style="-fx-background-color: #1f375c; -fx-padding: 20;">

@@ -18,12 +18,12 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>17.0.2</version>
+            <version>17.0.7</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>17.0.2</version>
+            <version>17.0.7</version>
         </dependency>
         <dependency>
             <groupId>org.controlsfx</groupId>
@@ -79,6 +79,12 @@
             <artifactId>javapoet</artifactId>
             <version>1.12.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.9.2</version>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
 
@@ -102,7 +108,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.fanduel.abstractr/com.fanduel.abstractr.HelloApplication</mainClass>
+                            <mainClass>com.fanduel.abstractr/com.fanduel.abstractr.AbstractrApplication</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

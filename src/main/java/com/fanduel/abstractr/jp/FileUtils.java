@@ -5,6 +5,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class FileUtils {
+
+    private FileUtils() {};
+
     public static List<File> getAllFilesFromRootDirectory(File rootDirectory) throws IllegalArgumentException {
         if (!rootDirectory.isDirectory()) {
             throw new IllegalArgumentException("Supplied file is not a directory.");

@@ -1,29 +1,17 @@
 package com.fanduel.abstractr;
 
 import com.fanduel.abstractr.jp.FileUtils;
-import com.fanduel.abstractr.jp.parser.JField;
-import com.fanduel.abstractr.jp.parser.JMethod;
 import com.fanduel.abstractr.jp.parser.JParser;
 import com.fanduel.abstractr.jp.parser.JType;
 import com.fanduel.abstractr.jp.parser.enums.Modifier;
-import com.squareup.javapoet.AnnotationSpec;
-import com.squareup.javapoet.FieldSpec;
-import com.squareup.javapoet.JavaFile;
-import com.squareup.javapoet.TypeSpec;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
-import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 
-import javax.annotation.processing.Generated;
 import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.Field;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -31,7 +19,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @Slf4j
-public class HelloController {
+public class MainController {
 
     @FXML
     private TextField packageInput;
@@ -78,7 +66,7 @@ public class HelloController {
         }
 
         List<File> files = fileNameMap.get(fileNameListView.getSelectionModel().getSelectedItem().split("\\s+")[0]);
-        List<JType> jTypes = files.stream().map(JParser::parseFile).toList();
+        List<JType> jTypes = files.stream().map(JParser::parseFile).collect(Collectors.toList());
 
         JType first = jTypes.get(0);
         final JType parent = new JType(
@@ -178,7 +166,7 @@ public class HelloController {
                         .filter(entry -> filter == null || filter.length() == 0 || entry.getKey().toLowerCase().contains(filter.toLowerCase()))
                         .map(entry -> entry.getKey() + " (" + entry.getValue().size() + ")")
                         .sorted()
-                        .toList());
+                        .collect(Collectors.toList()));
     }
 
 }
