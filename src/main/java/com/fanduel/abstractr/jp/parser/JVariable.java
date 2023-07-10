@@ -1,11 +1,11 @@
 package com.fanduel.abstractr.jp.parser;
 
-import antlr.Java9Parser;
+
+import com.fanduel.abstractr.antlr.generated.Java9Parser;
 import com.fanduel.abstractr.jp.parser.enums.Modifier;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 

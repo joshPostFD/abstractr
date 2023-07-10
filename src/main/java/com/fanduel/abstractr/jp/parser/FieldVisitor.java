@@ -1,8 +1,9 @@
 package com.fanduel.abstractr.jp.parser;
 
 
-import antlr.Java9Parser;
-import antlr.Java9ParserBaseVisitor;
+
+import com.fanduel.abstractr.antlr.generated.Java9Parser;
+import com.fanduel.abstractr.antlr.generated.Java9ParserBaseVisitor;
 
 import java.util.ArrayList;
 import java.util.List;

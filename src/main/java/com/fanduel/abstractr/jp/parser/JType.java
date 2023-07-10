@@ -1,6 +1,7 @@
 package com.fanduel.abstractr.jp.parser;
 
-import antlr.Java9Parser;
+
+import com.fanduel.abstractr.antlr.generated.Java9Parser;
 import com.fanduel.abstractr.jp.parser.enums.AccessLevel;
 import com.fanduel.abstractr.jp.parser.enums.Modifier;
 import lombok.AllArgsConstructor;

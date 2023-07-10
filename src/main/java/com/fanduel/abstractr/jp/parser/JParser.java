@@ -1,7 +1,8 @@
 package com.fanduel.abstractr.jp.parser;
 
-import antlr.Java9Lexer;
-import antlr.Java9Parser;
+
+import com.fanduel.abstractr.antlr.generated.Java9Lexer;
+import com.fanduel.abstractr.antlr.generated.Java9Parser;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 
